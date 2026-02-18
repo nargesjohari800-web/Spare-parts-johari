@@ -91,6 +91,99 @@
       font-size: 14px;
       color: #aaa;
     }
+
+    /* =====================
+   RESPONSIVE ABOUT PAGE
+===================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .nav {
+    left: 30px;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    max-width: 760px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* NAV */
+  .nav {
+    position: static;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .overlay {
+    padding: 40px 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  ul {
+    columns: 1;
+    padding-left: 18px;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact a {
+    margin: 8px;
+  }
+
+  .location {
+    margin-top: 12px;
+    font-size: 13px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}
+
   </style>
 </head>
 
@@ -149,3 +242,4 @@
   </div>
 </body>
 </html>
+
