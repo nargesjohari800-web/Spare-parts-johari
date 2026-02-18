@@ -87,4 +87,105 @@ body {
     height: 65%;
     background: url("parts.png") no-repeat right bottom;
     background-size: contain;
+
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .nav {
+        left: 30px;
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+        letter-spacing: 6px;
+    }
+
+    .left-image {
+        width: 45%;
+        height: 60%;
+    }
+
+    .right-image {
+        width: 50%;
+        height: 55%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .hero {
+        height: 100svh;
+    }
+
+    /* NAV */
+    .nav {
+        position: static;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    /* CENTER TEXT */
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        letter-spacing: 4px;
+    }
+
+    .hero-content .sub {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    /* IMAGES */
+    .left-image,
+    .right-image {
+        width: 100%;
+        height: 35%;
+        opacity: 0.9;
+    }
+
+    .left-image {
+        left: -20%;
+    }
+
+    .right-image {
+        right: -20%;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 34px;
+        letter-spacing: 3px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    /* hide images for very small screens */
+    .left-image,
+    .right-image {
+        display: none;
+    }
 }
